@@ -1,4 +1,9 @@
 $(document).ready(function(){
+
+  $("#myBtn").click(function(){
+  $("#myModal").modal();
+});
+
   $("form#quiz").submit(function(event){
 
     var nameInput = $("input#name").val();
@@ -116,4 +121,5 @@ $(document).ready(function(){
 
   event.preventDefault();
   });
+
 });
