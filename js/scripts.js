@@ -1,8 +1,8 @@
 $(document).ready(function(){
 
-  $("#myBtn").click(function(){
-  $("#myModal").modal();
-});
+  // $("#myBtn").click(function(){
+  // $("#myModal").modal();
+// });
 
   $("form#quiz").submit(function(event){
 

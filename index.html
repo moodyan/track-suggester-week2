@@ -8,130 +8,129 @@
     <title>Epicodus Track Suggester</title>
   </head>
   <body>
-    <div class="container" id="page">
+    <div class="container">
       <div class="jumbotron">
         <h1>Epicodus Track Suggester</h1>
         <p>Here at Epicodus, we have five different tracks offered in both Portland and Seattle. Take the quiz below to see which track might fit you best!</p>
 
-        <!-- Trigger the modal with a button -->
-  <button type="button" class="btn btn-default btn-sm" id="myBtn">Track Options</button>
+        <!-- Modal  button -->
+        <!-- <button type="button" class="btn btn-default btn-sm" id="myBtn">Track Options</button> -->
+
+        <!-- Modal -->
+        <!-- <div class="modal fade" id="myModal" role="dialog">
+          <div class="modal-dialog"> -->
+
+            <!-- Modal content-->
+            <!-- <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">Epicodus Track Options</h4>
+              </div>
+              <div class="modal-body">
+                <ul>
+                  <li>CSS/Design</li>
+                  <li>C#/.NET</li>
+                  <li>PHP/Drupal</li>
+                  <li>Ruby/Rails</li>
+                  <li>JavaScript</li>
+                </ul>
+                <p>All tracks include JavaScript</p>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+              </div> -->
+            <!-- </div> -->
+          <!-- </div> -->
+        </div>
       </div>
-  <!-- Modal -->
-  <div class="modal fade" id="myModal" role="dialog">
-    <div class="modal-dialog">
-
-      <!-- Modal content-->
-      <div class="modal-content">
-        <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal">&times;</button>
-          <h4 class="modal-title">Epicodus Track Options</h4>
-        </div>
-        <div class="modal-body">
-          <ul>
-            <li>CSS/Design</li>
-            <li>C#/.NET</li>
-            <li>PHP/Drupal</li>
-            <li>Ruby/Rails</li>
-            <li>JavaScript</li>
-          </ul>
-          <p>All tracks include JavaScript</p>
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-        </div>
-      </div>
-
-    </div>
-  </div>
 
 
+      <div class="container">
 
-    <div class="container">
+        <form id="quiz">
+          <div class="form-group">
+            <label class="control-label" for="name">Name</label>
+            <input type="text" id="name" class="form-control">
+          </div>
+<!-- Form Questions -->
+          <div class="form-group">
+            <label for="development">Are you interested in front-end or back-end development? <em><small>Not sure? <a href="https://www.coursereport.com/blog/front-end-development-vs-back-end-development-where-to-start">Click here</a> to find out more.</em></small></label>
+            <select class="form-control" id="development">
+              <option disabled selected>- Select One -</option>
+              <option value="front-end">Front-End Development</option>
+              <option value="back-end">Back-End Development</option>
+            </select>
+          </div>
 
-      <form id="quiz">
-        <div class="form-group">
-          <label class="control-label" for="name">Name</label>
-          <input type="text" id="name" class="form-control">
-        </div>
+          <div class="form-group">
+            <label for="company">What kind of company are you interested in working for?</label>
+            <select class="form-control" id="company">
+              <option disabled selected>- Select One -</option>
+              <option value="company-csharp">A bigger, established business</option>
+              <option value="company-rubyphp">A smaller startup</option>
+            </select>
+          </div>
 
-        <div class="form-group">
-          <label for="development">Are you interested in front-end or back-end development? <em><small>Not sure? <a href="https://www.coursereport.com/blog/front-end-development-vs-back-end-development-where-to-start">Click here</a> to find out more.</em></small></label>
-          <select class="form-control" id="development">
-            <option disabled selected>- Select One -</option>
-            <option value="front-end">Front-End Development</option>
-            <option value="back-end">Back-End Development</option>
-          </select>
-        </div>
+          <div class="form-group">
+            <label for="task">What would you like to do with what you learn?</label>
+            <select class="form-control" id="task">
+              <option disabled selected>- Select One -</option>
+              <option value="task-csharp">Work on internal software for my company</option>
+              <option value="task-ruby">Build interactive web applications</option>
+              <option value="task-php">Build content heavy websites for clients</option>
+            </select>
+          </div>
 
-        <div class="form-group">
-          <label for="company">What kind of company are you interested in working for?</label>
-          <select class="form-control" id="company">
-            <option disabled selected>- Select One -</option>
-            <option value="company-csharp">A bigger, established business</option>
-            <option value="company-rubyphp">A smaller startup</option>
-          </select>
-        </div>
+          <div class="form-group">
+            <label for="attribute">Do you like to solve complex problems or do you prefer a more understandable and functional approach?</label>
+            <select class="form-control" id="attribute">
+              <option disabled selected>- Select One -</option>
+              <option value="attribute-phpcsharp">Complex problem-solving</option>
+              <option value="attribute-ruby">Understandable, functional approach</option>
+            </select>
+          </div>
 
-        <div class="form-group">
-          <label for="task">What would you like to do with what you learn?</label>
-          <select class="form-control" id="task">
-            <option disabled selected>- Select One -</option>
-            <option value="task-csharp">Work on internal software for my company</option>
-            <option value="task-ruby">Build interactive web applications</option>
-            <option value="task-php">Build content heavy websites for clients</option>
-          </select>
-        </div>
+          <div class="form-group">
+            <label for="system">Are you interested in Windows-based development or Apple based?</label>
+            <select class="form-control" id="system">
+              <option disabled selected>- Select One -</option>
+              <option value="system-csharp">Windows</option>
+              <option value="system-phpruby">Apple</option>
+            </select>
+          </div>
 
-        <div class="form-group">
-          <label for="attribute">Do you like to solve complex problems or do you prefer a more understandable and functional approach?</label>
-          <select class="form-control" id="attribute">
-            <option disabled selected>- Select One -</option>
-            <option value="attribute-phpcsharp">Complex problem-solving</option>
-            <option value="attribute-ruby">Understandable, functional approach</option>
-          </select>
-        </div>
+          <center><button type="submit" class="btn btn-lg">SUBMIT</button></center>
 
-        <div class="form-group">
-          <label for="system">Are you interested in Windows-based development or Apple based?</label>
-          <select class="form-control" id="system">
-            <option disabled selected>- Select One -</option>
-            <option value="system-csharp">Windows</option>
-            <option value="system-phpruby">Apple</option>
-          </select>
-        </div>
+          <!-- Answer Section -->
 
-        <center><button type="submit" class="btn btn-lg">SUBMIT</button></center>
+          <div id="answer-css">
+            <h1>CSS/Design Track</h1>
+            <h3>Congratulations, <span class="name"></span>, you should take the CSS/Design Track.</h3>
+            <p>Why, you ask? You selected that you would like to work on front-end development. Since this is the only track we offer, CSS and Design is going to be the best option for you. Front-end developers spend their time making things look and work well, obsessing over layouts, navigation, colors, and design.</p>
+            <p><a href="index.html">Back to Quiz</a></p>
+          </div>
 
-<!-- Start Answer Section -->
+          <div id="answer-ruby">
+            <h1>Ruby/Rails Track</h1>
+            <h3>Woohooo, <span class="name"></span>! You got the Ruby/Rails track!</h3>
+            <p>Ruby is a favorite language of developers building interactive web applications. If an app involves users creating accounts, entering information, and interacting with dynamic content, there's a good chance it is built with Ruby. Ruby became popular because the Rails framework, which is written with Ruby, simplified many of the common tasks associated with building web applications. It's most popular with startups and smaller companies who are looking to build their product quickly.</p>
+            <p><a href="index.html">Back to Quiz</a></p>
+          </div>
 
-        <div id="answer-css">
-          <h1>CSS/Design Track</h1>
-          <h3>Congratulations, <span class="name"></span>, you should take the CSS/Design Track.</h3>
-          <p>Why, you ask? You selected that you would like to work on front-end development. Since this is the only track we offer, CSS and Design is going to be the best option for you. Front-end developers spend their time making things look and work well, obsessing over layouts, navigation, colors, and design.</p>
-          <p><a href="index.html">Back to Quiz</a></p>
-        </div>
+          <div id="answer-php">
+            <h1>PHP/Drupal Track</h1>
+            <h3>Hi, <span class="name"></span>! Your suggested track is the PHP/Drupal track.</h3>
+            <p>PHP is most used in content-heavy websites with relatively little user interaction. The most popular content management systems - Wordpress, Drupal, and Joomla - are all written in PHP, and everything from local restaurants' websites up through large complex government deployments are built with these tools. If you're keen to work for an agency that builds websites for clients, or if you like the idea of building out sites for brands, businesses, and organizations, PHP is a great direction to go.</p>
+            <p><a href="index.html">Back to Quiz</a></p>
+          </div>
 
-        <div id="answer-ruby">
-          <h1>Ruby/Rails Track</h1>
-          <h3>Woohooo, <span class="name"></span>! You got the Ruby/Rails track!</h3>
-          <p>Ruby is a favorite language of developers building interactive web applications. If an app involves users creating accounts, entering information, and interacting with dynamic content, there's a good chance it is built with Ruby. Ruby became popular because the Rails framework, which is written with Ruby, simplified many of the common tasks associated with building web applications. It's most popular with startups and smaller companies who are looking to build their product quickly.</p>
-          <p><a href="index.html">Back to Quiz</a></p>
-        </div>
-
-        <div id="answer-php">
-          <h1>PHP/Drupal Track</h1>
-          <h3>Hi, <span class="name"></span>! Your suggested track is the PHP/Drupal track.</h3>
-          <p>PHP is most used in content-heavy websites with relatively little user interaction. The most popular content management systems - Wordpress, Drupal, and Joomla - are all written in PHP, and everything from local restaurants' websites up through large complex government deployments are built with these tools. If you're keen to work for an agency that builds websites for clients, or if you like the idea of building out sites for brands, businesses, and organizations, PHP is a great direction to go.</p>
-          <p><a href="index.html">Back to Quiz</a></p>
-        </div>
-
-        <div id="answer-csharp">
-          <h1>C#/.NET Track</h1>
-          <h3>Hey there, <span class="name"></span>! Your suggested track is the C#/.NET track.</h3>
-          <p>C# is most popular among bigger established businesses, often for building internal software. Because it's been around for a long time and has the backing of Microsoft, it is one of the most in-demand languages in the job market. C# has also been going through a bit of a rebirth lately, with Microsoft open sourcing the language and surrounding platform, porting it to run on Mac and Linux, and incorporating many of the best features of other languages. If you like the idea of working for a larger company on business software, C# is a great choice.</p>
-          <p><a href="index.html">Back to Quiz</a></p>
-        </div>
-      </form>
+          <div id="answer-csharp">
+            <h1>C#/.NET Track</h1>
+            <h3>Hey there, <span class="name"></span>! Your suggested track is the C#/.NET track.</h3>
+            <p>C# is most popular among bigger established businesses, often for building internal software. Because it's been around for a long time and has the backing of Microsoft, it is one of the most in-demand languages in the job market. C# has also been going through a bit of a rebirth lately, with Microsoft open sourcing the language and surrounding platform, porting it to run on Mac and Linux, and incorporating many of the best features of other languages. If you like the idea of working for a larger company on business software, C# is a great choice.</p>
+            <p><a href="index.html">Back to Quiz</a></p>
+          </div>
+        </form>
       </div>
     </div>
   </body>
