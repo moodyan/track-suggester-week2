@@ -8,106 +8,107 @@ $(document).ready(function(){
     var attInput = $("select#attribute").val();
     var systemInput = $("select#system").val();
 
+    if (devInput === "front-end") {
+      $("#answer-css").show();
+    } else {
+        if (companyInput === "company-csharp" && taskInput === "task-csharp" && attInput === "attribute-phpcsharp" && systemInput === "system-csharp") {
+          $("#answer-csharp").show();
+          // $(".answer-csharp").siblings("#answer-section").hide();
+        }
+        if (companyInput === "company-csharp" && taskInput === "task-ruby" && attInput === "attribute-phpcsharp" && systemInput === "system-csharp") {
+          $("#answer-csharp").show();
+          // $(".answer-csharp").siblings("#answer-section").hide();
+        }
+        if (companyInput === "company-csharp" && taskInput === "task-php" && attInput === "attribute-phpcsharp" && systemInput === "system-csharp") {
+          $("#answer-csharp").show();
+          // $(".answer-csharp").siblings("#answer-section").hide();
+        }
+        if (companyInput === "company-csharp" && taskInput === "task-csharp" && attInput === "attribute-ruby" && systemInput === "system-csharp") {
+          $("#answer-csharp").show();
+          // $(".answer-csharp").siblings("#answer-section").hide();
+        }
+        if (companyInput === "company-csharp" && taskInput === "task-ruby" && attInput === "attribute-ruby" && systemInput === "system-csharp") {
+          $("#answer-ruby").show();
+          // $(".answer-csharp").siblings("#answer-section").hide();
+        }
+        if (companyInput === "company-csharp" && taskInput === "task-php" && attInput === "attribute-ruby" && systemInput === "system-csharp") {
+          $("#answer-csharp").show();
+          // $(".answer-csharp").siblings("#answer-section").hide();
+        }
+        if (companyInput === "company-csharp" && taskInput === "task-csharp" && attInput === "attribute-phpcsharp" && systemInput === "system-phpruby") {
+          $("#answer-csharp").show();
+          // $(".answer-csharp").siblings("#answer-section").hide();
+        }
+        if (companyInput === "company-csharp" && taskInput === "task-ruby" && attInput === "attribute-phpcsharp" && systemInput === "system-phpruby") {
+          $("#answer-ruby").show();
+          // $(".answer-csharp").siblings("#answer-section").hide();
+        }
 
-    if (devInput === "back-end") {
-      if (companyInput === "company-csharp" && taskInput === "task-csharp" && attInput === "phpcsharp" && systemInput === "system-csharp") {
-        $(".answer-csharp").show();
-        $(".answer-csharp").siblings("#answer-section").hide();
-      }
-      if (companyInput === "company-csharp" && taskInput === "task-ruby" && attInput === "phpcsharp" && systemInput === "system-csharp") {
-        $(".answer-csharp").show();
-        $(".answer-csharp").siblings("#answer-section").hide();
-      }
-      if (companyInput === "company-csharp" && taskInput === "task-php" && attInput === "phpcsharp" && systemInput === "system-csharp") {
-        $(".answer-csharp").show();
-        $(".answer-csharp").siblings("#answer-section").hide();
-      }
-      if (companyInput === "company-csharp" && taskInput === "task-csharp" && attInput === "attribute-ruby" && systemInput === "system-csharp") {
-        $(".answer-csharp").show();
-        $(".answer-csharp").siblings("#answer-section").hide();
-      }
-      if (companyInput === "company-csharp" && taskInput === "task-ruby" && attInput === "attribute-ruby" && systemInput === "system-csharp") {
-        $(".answer-csharp").show();
-        $(".answer-csharp").siblings("#answer-section").hide();
-      }
-      if (companyInput === "company-csharp" && taskInput === "task-php" && attInput === "attribute-ruby" && systemInput === "system-csharp") {
-        $(".answer-csharp").show();
-        $(".answer-csharp").siblings("#answer-section").hide();
-      }
-      if (companyInput === "company-csharp" && taskInput === "task-csharp" && attInput === "phpcsharp" && systemInput === "system-phpruby") {
-        $(".answer-csharp").show();
-        $(".answer-csharp").siblings("#answer-section").hide();
-      }
-      if (companyInput === "company-csharp" && taskInput === "task-ruby" && attInput === "phpcsharp" && systemInput === "system-phpruby") {
-        $(".answer-csharp").show();
-        $(".answer-csharp").siblings("#answer-section").hide();
-      }
-      if (companyInput === "company-csharp" && taskInput === "task-php" && attInput === "phpcsharp" && systemInput === "system-phpruby") {
-        $(".answer-csharp").show();
-        $(".answer-csharp").siblings("#answer-section").hide();
-      }
-      if (companyInput === "company-csharp" && taskInput === "task-csharp" && attInput === "attribute-ruby" && systemInput === "system-phpruby") {
-        $(".answer-csharp").show();
-        $(".answer-csharp").siblings("#answer-section").hide();
-      }
-      if (companyInput === "company-csharp" && taskInput === "task-ruby" && attInput === "attribute-ruby" && systemInput === "system-phpruby") {
-        $(".answer-csharp").show();
-        $(".answer-csharp").siblings("#answer-section").hide();
-      }
-      if (companyInput === "company-csharp" && taskInput === "task-php" && attInput === "attribute-ruby" && systemInput === "system-phpruby") {
-        $(".answer-csharp").show();
-        $(".answer-csharp").siblings("#answer-section").hide();
-      }
-      if (companyInput === "company-rubyphp" && taskInput === "task-csharp" && attInput === "phpcsharp" && systemInput === "system-csharp") {
-        $(".answer-csharp").show();
-        $(".answer-csharp").siblings("#answer-section").hide();
-      }
-      if (companyInput === "company-rubyphp" && taskInput === "task-ruby" && attInput === "phpcsharp" && systemInput === "system-csharp") {
-        $(".answer-csharp").show();
-        $(".answer-csharp").siblings("#answer-section").hide();
-      }
-      if (companyInput === "company-rubyphp" && taskInput === "task-php" && attInput === "phpcsharp" && systemInput === "system-csharp") {
-        $(".answer-csharp").show();
-        $(".answer-csharp").siblings("#answer-section").hide();
-      }
-      if (companyInput === "company-rubyphp" && taskInput === "task-csharp" && attInput === "attribute-ruby" && systemInput === "system-csharp") {
-        $(".answer-csharp").show();
-        $(".answer-csharp").siblings("#answer-section").hide();
-      }
-      if (companyInput === "company-rubyphp" && taskInput === "task-ruby" && attInput === "attribute-ruby" && systemInput === "system-csharp") {
-        $(".answer-csharp").show();
-        $(".answer-csharp").siblings("#answer-section").hide();
-      }
-      if (companyInput === "company-rubyphp" && taskInput === "task-php" && attInput === "attribute-ruby" && systemInput === "system-csharp") {
-        $(".answer-csharp").show();
-        $(".answer-csharp").siblings("#answer-section").hide();
-      }
-      if (companyInput === "company-rubyphp" && taskInput === "task-csharp" && attInput === "phpcsharp" && systemInput === "system-phpruby") {
-        $(".answer-csharp").show();
-        $(".answer-csharp").siblings("#answer-section").hide();
-      }
-      if (companyInput === "company-rubyphp" && taskInput === "task-ruby" && attInput === "phpcsharp" && systemInput === "system-phpruby") {
-        $(".answer-csharp").show();
-        $(".answer-csharp").siblings("#answer-section").hide();
-      }
-      if (companyInput === "company-rubyphp" && taskInput === "task-php" && attInput === "phpcsharp" && systemInput === "system-phpruby") {
-        $(".answer-csharp").show();
-        $(".answer-csharp").siblings("#answer-section").hide();
-      }
-      if (companyInput === "company-rubyphp" && taskInput === "task-csharp" && attInput === "attribute-ruby" && systemInput === "system-phpruby") {
-        $(".answer-csharp").show();
-        $(".answer-csharp").siblings("#answer-section").hide();
-      }
-      if (companyInput === "company-rubyphp" && taskInput === "task-ruby" && attInput === "attribute-ruby" && systemInput === "system-phpruby") {
-        $(".answer-csharp").show();
-        $(".answer-csharp").siblings("#answer-section").hide();
-      }
-      if (companyInput === "company-rubyphp" && taskInput === "task-php" && attInput === "attribute-ruby" && systemInput === "system-phpruby") {
-        $(".answer-csharp").show();
-        $(".answer-csharp").siblings("#answer-section").hide();
-      }
+        if (companyInput === "company-csharp" && taskInput === "task-php" && attInput === "attribute-phpcsharp" && systemInput === "system-phpruby") {
+          $("#answer-php").show();
+          // $(".answer-csharp").siblings("#answer-section").hide();
+        }
+        if (companyInput === "company-csharp" && taskInput === "task-csharp" && attInput === "attribute-ruby" && systemInput === "system-phpruby") {
+          $("#answer-csharp").show();
+          // $(".answer-csharp").siblings("#answer-section").hide();
+        }
+        if (companyInput === "company-csharp" && taskInput === "task-ruby" && attInput === "attribute-ruby" && systemInput === "system-phpruby") {
+          $("#answer-ruby").show();
+          // $(".answer-csharp").siblings("#answer-section").hide();
+        }
+        if (companyInput === "company-csharp" && taskInput === "task-php" && attInput === "attribute-ruby" && systemInput === "system-phpruby") {
+          $("#answer-php").show();
+          // $(".answer-csharp").siblings("#answer-section").hide();
+        }
+        if (companyInput === "company-rubyphp" && taskInput === "task-csharp" && attInput === "attribute-phpcsharp" && systemInput === "system-csharp") {
+          $("#answer-csharp").show();
+          // $(".answer-csharp").siblings("#answer-section").hide();
+        }
+        if (companyInput === "company-rubyphp" && taskInput === "task-ruby" && attInput === "attribute-phpcsharp" && systemInput === "system-csharp") {
+          $("#answer-ruby").show();
+          // $(".answer-csharp").siblings("#answer-section").hide();
+        }
+        if (companyInput === "company-rubyphp" && taskInput === "task-php" && attInput === "attribute-phpcsharp" && systemInput === "system-csharp") {
+          $("#answer-php").show();
+          // $(".answer-csharp").siblings("#answer-section").hide();
+        }
+        if (companyInput === "company-rubyphp" && taskInput === "task-csharp" && attInput === "attribute-ruby" && systemInput === "system-csharp") {
+          $("#answer-csharp").show();
+          // $(".answer-csharp").siblings("#answer-section").hide();
+        }
+        if (companyInput === "company-rubyphp" && taskInput === "task-ruby" && attInput === "attribute-ruby" && systemInput === "system-csharp") {
+          $("#answer-ruby").show();
+          // $(".answer-csharp").siblings("#answer-section").hide();
+        }
+        if (companyInput === "company-rubyphp" && taskInput === "task-php" && attInput === "attribute-ruby" && systemInput === "system-csharp") {
+          $("#answer-php").show();
+          // $(".answer-csharp").siblings("#answer-section").hide();
+        }
+        if (companyInput === "company-rubyphp" && taskInput === "task-csharp" && attInput === "attribute-phpcsharp" && systemInput === "system-phpruby") {
+          $("#answer-php").show();
+          // $(".answer-csharp").siblings("#answer-section").hide();
+        }
+        if (companyInput === "company-rubyphp" && taskInput === "task-ruby" && attInput === "attribute-phpcsharp" && systemInput === "system-phpruby") {
+          $("#answer-ruby").show();
+          // $(".answer-csharp").siblings("#answer-section").hide();
+        }
+        if (companyInput === "company-rubyphp" && taskInput === "task-php" && attInput === "attribute-phpcsharp" && systemInput === "system-phpruby") {
+          $("#answer-php").show();
+          // $(".answer-csharp").siblings("#answer-section").hide();
+        }
+        if (companyInput === "company-rubyphp" && taskInput === "task-csharp" && attInput === "attribute-ruby" && systemInput === "system-phpruby") {
+          $("#answer-ruby").show();
+          // $(".answer-csharp").siblings("#answer-section").hide();
+        }
+        if (companyInput === "company-rubyphp" && taskInput === "task-ruby" && attInput === "attribute-ruby" && systemInput === "system-phpruby") {
+          $("#answer-ruby").show();
+          // $(".answer-csharp").siblings("#answer-section").hide();
+        }
+        if (companyInput === "company-rubyphp" && taskInput === "task-php" && attInput === "attribute-ruby" && systemInput === "system-phpruby") {
+          $("#answer-php").show();
+          // $(".answer-csharp").siblings("#answer-section").hide();
+        }
     }
-
 
   event.preventDefault();
   });
