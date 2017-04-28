@@ -8,9 +8,12 @@ $(document).ready(function(){
     var attInput = $("select#attribute").val();
     var systemInput = $("select#system").val();
 
+    $(".name").text(nameInput);
+
     if (devInput === "front-end") {
       $("#answer-css").show();
       $("#answer-css").siblings().hide();
+
     } else {
         if (companyInput === "company-csharp" && taskInput === "task-csharp" && attInput === "attribute-phpcsharp" && systemInput === "system-csharp") {
           $("#answer-csharp").show();
@@ -111,8 +114,6 @@ $(document).ready(function(){
         }
     }
 
-    $("#name").text(nameInput);
-    
   event.preventDefault();
   });
 });
