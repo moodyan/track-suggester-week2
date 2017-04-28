@@ -33,8 +33,8 @@
           <label for="company">What kind of company are you interested in working for?</label>
           <select class="form-control" id="quality">
             <option disabled selected>- Select One -</option>
-            <option class="company-csharp1">A bigger, established business.</option>
-            <option class="company-rubyphp2">A smaller startup.</option>
+            <option value="company-csharp">A bigger, established business</option>
+            <option value="company-rubyphp">A smaller startup</option>
           </select>
         </div>
 
@@ -42,9 +42,9 @@
           <label for="task">What would you like to do with what you learn?</label>
           <select class="form-control" id="task">
             <option disabled selected>- Select One -</option>
-            <option class="task-csharp1">Work on internal software for my company.</option>
-            <option class="task-ruby2">Build interactive web applications.</option>
-            <option class="task-php3">Build content heavy websites for clients.</option>
+            <option value="task-csharp">Work on internal software for my company</option>
+            <option value="task-ruby">Build interactive web applications</option>
+            <option value="task-php">Build content heavy websites for clients</option>
           </select>
         </div>
 
@@ -52,8 +52,8 @@
           <label for="attribute">Do you like to solve complex problems or do you prefer a more understandable and functional approach?</label>
           <select class="form-control" id="attribute">
             <option disabled selected>- Select One -</option>
-            <option class="attribute-phpcsharp1">Complex problem-solving.</option>
-            <option class="attribute-ruby2">Understandable, functional approach.</option>
+            <option value="attribute-phpcsharp">Complex problem-solving</option>
+            <option value="attribute-ruby">Understandable, functional approach</option>
           </select>
         </div>
 
@@ -61,32 +61,33 @@
           <label for="system">Are you interested in Windows-based development or Apple based?</label>
           <select class="form-control" id="system">
             <option disabled selected>- Select One -</option>
-            <option class="system-csharp1">Windows.</option>
-            <option class="system-phpruby2">Apple.</option>
+            <option value="system-csharp">Windows</option>
+            <option value="system-phpruby">Apple</option>
           </select>
         </div>
 
         <button type="submit" class="btn btn-lg">SUBMIT</button>
       </form>
 <!-- Start Answer Section -->
-      <div class="answer-css">
-        <h1>CSS/Design</h1>
-      </div>
+      <div class="container" id="answer-section">
 
-      <div class="answer-ruby">
-        <h1>RUBY</h1>
-      </div>
+        <div class="answer-css">
+          <h1>CSS/Design</h1>
+        </div>
 
-      <div class="answer-php">
-        <h1>PHP</h1>
-      </div>
+        <div class="answer-ruby">
+          <h1>RUBY</h1>
+        </div>
 
-      <div class="answer-csharp">
-        <h1>C#</h1>
-      </div>
+        <div class="answer-php">
+          <h1>PHP</h1>
+        </div>
 
+        <div class="answer-csharp">
+          <h1>C#</h1>
+        </div>
+      </div>
 
     </div>
-
   </body>
 </html>
