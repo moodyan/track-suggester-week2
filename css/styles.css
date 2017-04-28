@@ -1,3 +1,7 @@
 #answer-css, #answer-csharp, #answer-ruby, #answer-php {
   display: none;
 }
+
+.jumbotron {
+  text-align: center;
+}
