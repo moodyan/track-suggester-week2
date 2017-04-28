@@ -15,11 +15,11 @@ _This is a webpage created for our second independent project at Epicodus. I cre
 * _Fill out quiz and click the submit button_
 * _Read your results and sign up for the suggested track at Epicodus_
 
-_You may also visit and repeat the last two steps listed above._
+_You may also visit https://moodyan.github.io/track-suggester-week2/ and repeat the last two steps listed above._
 
 ## Known Bugs
 
-_No known bugs._
+_Modal button commented out in code - could not get it to work in scripts.js._
 
 ## Support and contact details
 
