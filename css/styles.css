@@ -4,4 +4,21 @@
 
 .jumbotron {
   text-align: center;
+  background-color: steelblue;
+}
+
+body {
+  background-color: aliceblue;
+}
+
+button {
+  background-color: steelblue;
+}
+
+#page {
+  margin-bottom: 30px;
+}
+
+button:hover {
+  background-color: tomato;
 }
